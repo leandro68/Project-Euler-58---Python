@@ -4,9 +4,9 @@ Solution for Project Euler problem 58 in Python
 ## Description
 Starting with 1 and spiralling anticlockwise in the following way, a square spiral with side length 7  is formed.
   
-<font color="red">37</font>  36  35  34  33  32  **31**  
+**37**  36  35  34  33  32  **31**  
 38  **17**  16  15  14  **13**  30  
-39  18   **5**   4   **3**  12  29  
+39&nbsp;&nbsp;18&nbsp;&nbsp;**5**&nbsp;&nbsp;4&nbsp;&nbsp;**3**&nbsp;&nbsp;12&nbsp;&nbsp;29  
 40  19  6  1  2  11  28  
 41 20  **7**  8  9 10 27  
 42 21 22 23 24 25 26  
