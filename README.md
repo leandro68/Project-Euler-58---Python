@@ -17,9 +17,9 @@ It is interesting to note that the odd squares lie along the bottom right diagon
 If one complete new layer is wrapped around the spiral above, a square spiral with side length 9 will be formed. If this process is continued, what is the side length of the square spiral for which the ratio of primes along both diagonals first falls below 10%?
 ___
 ## Content
-Readme.me    details about project  
+Readme.me - details about project  
 
-start.py     code to solve the problem proposed in the description.  
+start.py - code to solve the problem proposed in the description.  
 ___
 ## Explained solution
 Starting with number 1, for each new square arond it, we have 4 new odd numbers on each vertex of this square.  
@@ -31,6 +31,7 @@ so to find the next vertex, instead of adding 2, we will have to add 4 (2+2),
 again, 4 will be the amount of numbers between vertices in this new square.  
 For the next square we will be adding 6 (4+2), and so on.  
 We repeat all this process until the ratio prime/odds is below 10% (or 0.1).  
+This solution find the answer in less than a second.  
 
 
 
