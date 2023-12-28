@@ -21,28 +21,17 @@ Readme.me    details about project
 
 start.py     code to solve the problem proposed in the description.  
 ___
-## Step by step code
+## Explained solution
+Starting with number 1, for each new square arond it, we have 4 new odd numbers on each vertex of this square.  
+Again, starting with number 1, we can find the next vertex adding 2, thus, therefore the 4 vertices will be 3,5,7,9.  
+We check for each vertex if it's prime and keep track of the amount of primes.  
+Once we complete the square, the next square will have a side length equal to the side length of the previous square plus 2,  
+that is the ammount of numbers between one vertex and the next.  
+so to find the next vertex, instead of adding 2, we will have to add 4 (2+2), 
+again, 4 will be the amount of numbers between vertices in this new square.  
+For the next square we will be adding 6 (4+2), and so on.  
+We repeat all this process until the ratio prime/odds is below 10% (or 0.1).  
 
-we'll use isprime function of the sympy function  
-**from sympy import isprime**  
-
-**addition = 0**  
-**odds = 1**  
-**primes = 0**  
-**ratio = 1**  
-**number = 1**  
-
-**while ratio >= 0.1:**  
-  **addition += 2**  
-  **for i in range(4):**  
-    **number += addition**  
-    **odds += 1**  
-    **if sympy.isprime(number):**  
-      **primes += 1**  
-  **ratio = primes / odds**  
-
-**print('side lenght: ',addition+1)**  
-**print('ratio: ', ratio)**  
 
 
 
