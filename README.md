@@ -1,6 +1,6 @@
 # Project-Euler-58---Python
 Solution for Project Euler problem 58 in Python 
-
+___
 ## Description
 Starting with 1 and spiralling anticlockwise in the following way, a square spiral with side length 7  is formed.
   
@@ -15,4 +15,34 @@ Starting with 1 and spiralling anticlockwise in the following way, a square spir
 It is interesting to note that the odd squares lie along the bottom right diagonal, but what is more interesting is that 8 out of the 13 numbers lying along both diagonals are prime; that is, a ratio of 8/13 ~ 62%.
 
 If one complete new layer is wrapped around the spiral above, a square spiral with side length 9 will be formed. If this process is continued, what is the side length of the square spiral for which the ratio of primes along both diagonals first falls below 10%?
+___
+## Content
+Readme.me    details about project  
+
+start.py     code to solve the problem proposed in the description.  
+___
+## Step by step code
+
+we'll use isprime function of the sympy function
+**from sympy import isprime**
+
+**addition = 0**
+**odds = 1**
+**primes = 0**
+**ratio = 1**
+**number = 1**
+
+**while ratio >= 0.1:**
+  **addition += 2**
+  **for i in range(4):**
+    **number += addition**
+    **odds += 1**
+    **if sympy.isprime(number):**
+      **primes += 1**
+  **ratio = primes / odds**
+
+**print('side lenght: ',addition+1)**
+**print('ratio: ', ratio)**
+
+
 
